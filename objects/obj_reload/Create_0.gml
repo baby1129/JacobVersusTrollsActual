@@ -1,3 +1,1 @@
-randomize();
-
-alarm[0] = 30; 
+//picked_up = true;

@@ -1,22 +1,26 @@
-//Me doing it
 
-
+//add if total enemies !over this number check
+//change this?
 var _x_spawn_pos = (random_range(-64, 1430));
 var _y_spawn_pos = (random_range(-64, 832));
 
 for (var i = 0; i < wave_number; i++){
 var _pick_side = irandom_range(0, 3);
 	if _pick_side == 0{
-	instance_create_layer(-64, _y_spawn_pos, "Instances", obj_troll);
+		_x_spawn_pos = ((obj_player.x) - VIEWPORT_WIDTH); 
+	instance_create_layer(_x_spawn_pos, _y_spawn_pos, "Instances", obj_troll);
 	}
 	if _pick_side == 1{
-	instance_create_layer(1430, _y_spawn_pos, "Instances", obj_troll);
+		_x_spawn_pos = ((obj_player.x) + VIEWPORT_WIDTH);
+	instance_create_layer(_x_spawn_pos, _y_spawn_pos, "Instances", obj_troll);
 	}
 	if _pick_side == 2{
-		instance_create_layer(_x_spawn_pos, -64, "Instances", obj_troll);
+		_y_spawn_pos = ((obj_player.y) - VIEWPORT_HEIGHT);
+		instance_create_layer(_x_spawn_pos, _y_spawn_pos, "Instances", obj_troll);
 	}
 	if _pick_side == 3{
-		instance_create_layer(_x_spawn_pos, 832, "Instances", obj_troll);
+		_y_spawn_pos = ((obj_player.y) + VIEWPORT_HEIGHT);
+		instance_create_layer(_x_spawn_pos, _y_spawn_pos, "Instances", obj_troll);
 	}
 }
 
