@@ -1,0 +1,2 @@
+Light_Chud(object_index, 1, sprite_width)
+glow_effect()
