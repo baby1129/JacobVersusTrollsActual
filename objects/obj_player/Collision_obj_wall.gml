@@ -1,0 +1,1 @@
+general_collision(obj_wall)

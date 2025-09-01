@@ -1,8 +1,8 @@
 
 //add if total enemies !over this number check
 //change this?
-var _x_spawn_pos = (random_range(-64, 1430));
-var _y_spawn_pos = (random_range(-64, 832));
+var _x_spawn_pos = (random_range(64, 2662));
+var _y_spawn_pos = (random_range(64, 1430));
 
 for (var i = 0; i < wave_number; i++){
 var _pick_side = irandom_range(0, 3);
